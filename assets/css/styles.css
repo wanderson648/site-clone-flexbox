@@ -1,24 +1,142 @@
+/* configuração global */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
   outline: 0;
 }
 
+/* configuração do header */
+
 header {
   display: flex;
   justify-content: center;
   height: 120px;
 }
-
 .container {
   display: flex;
   justify-content: space-between;
-  width: 800px;
+  width: 990px;
 }
-
 .logo {
   display: flex;
   align-items: center;
 }
 .menu {
+  display: flex;
+  align-items: center;
+}
+.menu nav ul,
+.menu nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu nav ul {
+  display: flex;
+}
+.menu nav a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #727272;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu nav .active a,
+.menu nav a:hover {
+  background: #39aae1;
+  color: white;
+}
+
+/* configuração da section-banner */
+
+#banner {
+  display: flex;
+  justify-content: center;
+
+  background-image: url('../images/img1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 670px;
+}
+#banner .column {
+  flex-direction: column;
+}
+.container .banner_headline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .banner_headline h1 {
+  color: white;
+  font-size: 70px;
+  text-shadow: 0px 1px 0px #555;
+  max-width: 350px;
+  margin: 0;
+  padding: 0;
+}
+.container .banner_headline h2 {
+  color: white;
+  font-size: 21px;
+  text-shadow: 0px 1px 0px #555;
+  max-width: 350px;
+  margin: 30px 0;
+  padding: 0;
+}
+.container .banner_options {
+  height: 210px;
+  display: flex;
+}
+.banner_options .banner1,
+.banner_options .banner2,
+.banner_options .banner3 {
+  flex: 1;
+  color: white;
+  padding: 20px;
+}
+.banner_options .banner1 {
+  background: #39aae1;
+}
+.banner_options .banner2 {
+  background: #0079c7;
+}
+.banner_options .banner3 {
+  background: #2b4c99;
+}
+.banner_options .banner1 a,
+.banner_options .banner2 a {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 8px;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+}
+.banner_options .banner1 a:hover {
+  background: #0079c6;
+}
+.banner_options .banner2 a:hover {
+  background: #39aae2;
+}
+.banner_options .banner_title {
+  font-size: 21px;
+}
+.banner_options .banner_innertitle {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #4682b4;
+}
+.banner_options .banner_innertitle .hours {
+  font-size: 12px;
+  margin: 14px 0;
+}
+.banner_options .banner_desc {
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
