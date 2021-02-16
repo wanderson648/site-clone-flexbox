@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.menu {
+}
