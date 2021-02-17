@@ -6,6 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Medicenter</title>
 
+  <script>
+    window.onload = () => {
+      document.querySelector(".menuMobile").addEventListener('click', () => {
+        if (document.querySelector(".menu nav ul").style.display === 'flex') {
+          document.querySelector(".menu nav ul").style.display = 'none';
+        } else {
+          document.querySelector(".menu nav ul").style.display = 'flex';
+        }
+      })
+    }
+  </script>
+
   <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
@@ -16,6 +28,11 @@
        </div>
        <div class="menu">
          <nav>
+           <div class="menuMobile">
+             <div class="mm_line"></div>
+             <div class="mm_line"></div>
+             <div class="mm_line"></div>
+           </div>
            <ul>
              <li class="active"><a href="#">Home</a></li>
              <li><a href="#">blog</a></li>
@@ -79,7 +96,6 @@
              <div class="widget_title_bar"></div>
            </div>
            <div class="widget_body flex">
-
              <article>
                <a href="#">
                 <div class="news_data">
